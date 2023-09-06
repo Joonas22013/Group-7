@@ -1,7 +1,7 @@
 # Group-7
 
 **Description:**
-A brief and concise overview of the project's purpose, goals, and significance.
+The purpose is to update this HAMK-learnwell evaluation system with feedbacks and recommendations that the user can view.
 
 **Team Members:**
 
@@ -14,12 +14,6 @@ A brief and concise overview of the project's purpose, goals, and significance.
 7. [samuli ronni](https://github.com/samulironni)
 8. [Sujan Tiwari](https://github.com/SujanHAMK)
 
-**Table of Contents:**
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 **Key Features and Functionalities**
 
