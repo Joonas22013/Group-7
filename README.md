@@ -8,11 +8,12 @@ The purpose is to update this HAMK-learnwell evaluation system with feedbacks an
 1. [Aliakbar Kamali](https://github.com/AliakbarKamali)
 2. [Joonas Sillanaukee](https://github.com/Joonas22013)
 3. [Rankiri Pathirage Anuradha Priyankara](https://github.com/anuradha220001)
-4. [Aryan](https://github.com/Aryan22000)
-5. [Janne](https://github.com/JanneStudent)
-6. [nedaMaghrebi](https://github.com/nedaMaghrebi)
-7. [samuli ronni](https://github.com/samulironni)
-8. [Sujan Tiwari](https://github.com/SujanHAMK)
+4. [Aryan Hamk](https://github.com/Aryan22000)
+5. [Aryan General](https://github.com/aryanm1380)
+6. [Janne](https://github.com/JanneStudent)
+7. [nedaMaghrebi](https://github.com/nedaMaghrebi)
+8. [samuli ronni](https://github.com/samulironni)
+9. [Sujan Tiwari](https://github.com/SujanHAMK)
 
 
 **Key Features and Functionalities**
