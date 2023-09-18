@@ -1,6 +1,19 @@
 /* Just for test commit*/
 body{ 
-    background-color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
 
 
+}
+
+.semester,.scope{
+
+
+    background-color: rgb(214, 214, 214);
+    padding: 100px;
 }
