@@ -4,75 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css">
-    <title>Document</title>
+    <title>Your Website Title</title>
 </head>
 <body>
+    <header>
+        <img src="assets/hamk.png" alt="HAMK">
+    </header>
 
-    <h1>Logo here</h1>
+    <nav class="topnav">
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </nav>
 
     <div class="row">
         <div class="column">
-        <div class="scope">
-        <h4>Gender:</h4>
-        <label for="scope"></label><br>
-        <select id="scope">
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            </select><br>
-
-        <h4>In which campus do you study at HAMK?:</h4>
-        <label for="scope"></label><br>
-        <select id="scope">
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option2">Option 3</option>
-            <option value="option2">Option 4</option>
-            <option value="option2">Option 5</option>
-            <option value="option2">Option 6</option>
-            <option value="option2">Option 7</option>
-            </select><br>
-
-        <h4>What is your degree program?:</h4>
-        <label for="scope"></label><br>
-        <select id="scope">
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option2">Option 3</option>
-            <option value="option2">Option 4</option>
-
-            </select><br>
+            <div class="scope">
+                <h4>Email here</h4>
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Email.." name="search">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </div>
-        
-        
-    </div>
 
         <div class="column">
             <div class="scope">
-            <h4>Select the scope:</h4>
-            <label for="scope">Peer Group 1</label>
+                <h4>Select the scope:</h4>
+                <label for="pg1">Peer Group 1</label>
                 <input type="checkbox" id="pg1" name="pg1" value="pg1"><br>
-            <label for="scope">Peer Group 2</label>
+                <label for="pg2">Peer Group 2</label>
                 <input type="checkbox" id="pg2" name="pg2" value="pg2"><br>
-            <label for="scope">Peer Group 3</label>
+                <label for="pg3">Peer Group 3</label>
                 <input type="checkbox" id="pg3" name="pg3" value="pg3"><br>
-            <label for="scope">Peer Group 4</label>
+                <label for="pg4">Peer Group 4</label>
                 <input type="checkbox" id="pg4" name="pg4" value="pg4"><br>
-
-
-        </div><div class="semester">
-            <h4>Select the semester:</h4>
-            <label for="semester1">2021 Autumn</label>
+            </div>
+            <div class="semester">
+                <h4>Select the semester:</h4>
+                <label for="semester1">2021 Autumn</label>
                 <input type="checkbox" id="semester1" name="semester1" value="semester1"><br>
-            <label for="semester2">2022 Autumn</label>
-                <input type="checkbox" id="semester2" name="semester2" value="semester2">    
-        </div></div>
-      </div>
-    
-    
+                <label for="semester2">2022 Autumn</label>
+                <input type="checkbox" id="semester2" name="semester2" value="semester2">
+            </div>
+        </div>
+    </div>
 
-
-    
-
+    <footer>
+        <p>&copy; Copyright Group 7</p>
+    </footer>
 </body>
-
 </html>
