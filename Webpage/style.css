@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* Reset some default styles for a cleaner look */
 body, html {
   margin: 0;
@@ -104,3 +105,39 @@ button {
   border: none;
   cursor: pointer;
 }
+=======
+<<<<<<< HEAD
+nav{
+       background-color: black;
+}
+=======
+/* Just for test commit*/
+body{ 
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.semester,.scope{
+
+
+    background-color: rgb(214, 214, 214);
+    padding: 100px;
+}
+
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+  }
+  
+>>>>>>> eedc05c350cb50e791192eefcae6af46bfa726b1
+>>>>>>> Stashed changes
