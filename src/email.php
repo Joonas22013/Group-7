@@ -1,5 +1,5 @@
 <?php
-$initials=parse_ini_file(".ht.asetukset.ini");
+$initials=parse_ini_file(".ht.settings.ini");
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -12,7 +12,7 @@ require 'src/SMTP.php';
 $json=isset($_POST["kayttaja"]) ? $_POST["kayttaja"] : "";
 
 if (!($kayttaja=tarkistaJson($json))){
-    print "Täytä kaikki kentät";
+    print "Fields cannot be empty";
     exit;
 }
 mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_INDEX);
@@ -36,13 +36,13 @@ try{
     $stmt=mysqli_prepare($yhteys, $sql);
     //Sijoitetaan muuttujat oikeisiin paikkoihin
     mysqli_stmt_bind_param($stmt, 'ssss', $kayttaja->etunimi, $kayttaja->sukunimi, $kayttaja->sahkoposti, $kayttaja->salasana);
-    //Suoritetaan sql-lause
+    //Execute sql statement
     mysqli_stmt_execute($stmt);
-    //Suljetaan tietokantayhteys
+    //Close database connection
     mysqli_close($yhteys);
     // print $json;
 
-    //SMTP-palvelin asetukset
+    //SMTP-server settings
     $mail->isSMTP();
     $mail->SMTPAuth = true;
     $mail->Host = $initials["host"];
@@ -53,7 +53,7 @@ try{
 
     //Tarkistetaan, onko sähköpostiosoite kelvollinen
   if (!filter_var($kayttaja->sahkoposti, FILTER_VALIDATE_EMAIL)) {
-    echo 'Sähköpostiosoite ei ole kelvollinen.';
+    echo 'Invalid email address.';
     exit;
   }
 
@@ -67,14 +67,14 @@ try{
     $mail->Body = 'Hei,<br>Kiitos rekisteröitymisestä Päivälehden käyttäjäksi. Olemme iloisia saadessamme toivottaa sinut tervetulleeksi osaksi yhteisöämme! <br> Mikäli et itse rekisteröitynyt käyttäjäksi, ota yhteyttä asiakaspalveluumme sähköpostitse.<br>paivalehti1@gmail.com <br><br>
                             Ystävällisin terveisin, <br> Päivälehti';   
 
-    //Tulostetaan näytölle kehotus tarkistaa sähköposti, mikäli viesti lähettyi 
+    //Print a message if email sent 
     $mail->send();    
-    echo 'Viesti lähetetty.';
+    echo 'Email sent.';
 
 }
 //Virheilmoitus mikäli viestin lähetys epäonnistui
 catch(Exception $e){
-    print "Jokin virhe!";
+    print "Error sending the message!";
 }
 ?>
 
