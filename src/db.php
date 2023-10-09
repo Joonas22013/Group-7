@@ -2,14 +2,12 @@
 $servername = "db";
 $username = "root";
 $password = "password";
-$dbname = "DF";
+$dbname = "project";
 
-// Creating connection
 $connection = new mysqli ($servername, $username, $password, $dbname);
 
-// Checking the connection
-if ($connection -> connect_error){
-    die("connection failed:".$connection->connect_error);
+if($connection->connect_error){
+    die("connection failed:" . $connection->connect_error);
 }
 
 ?>
